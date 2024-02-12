@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 
 # Start Webpage
-st.set_page_config(page_title="Palworld Breeding Calculator", page_icon="🥚", layout="wide")
+st.set_page_config(page_title="Palworld Breeding Calculator", page_icon="2️⃣", layout="wide")
 
 
 # ---------------------------- Retrieve Data ------------------------------- #
@@ -140,8 +140,8 @@ with st.container():
     c1, c2, c3, c4 = st.columns([2, 1, 3, 3])
     c1.text("Game Version: 0.1.4.0")
     c1.write("[https://github.com/beckerfelipee](https://github.com/beckerfelipee)")
-    if c3.button("Feeling Slow?... try the other Server", use_container_width=True):
-        st.toast("New website for finding the best pals to work is on its way!!", icon='🤚')
+    c3.link_button("🐣 Back to Main Server", "https://breeding-calculator-palworld.streamlit.app/",
+                   use_container_width=True)
     c3.title('Palworld Breeding :blue[Calculator]', anchor=False)
     c1.link_button("Buy me a coffee!", "https://www.buymeacoffee.com/beckerfelipee")
 
